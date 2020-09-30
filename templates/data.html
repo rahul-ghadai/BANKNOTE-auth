@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+	<div class="form-row align-items-center">
+  <div class="col-auto">
+    <label for="exampleInputEmail1">variance</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="variance" required>
+    <!-- <small id="emailHelp" class="form-text text-muted">variance.</small> -->
+  </div>
+  <div class="col-auto">
+    <label for="exampleInputEmail1">skewness</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="skewness" required>
+    <!-- <small id="emailHelp" class="form-text text-muted">skewness.</small> -->
+  </div>
+  <div class="col-auto">
+    <label for="exampleInputEmail1">curtosis</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name='curtosis' required>
+    <!-- <small id="emailHelp" class="form-text text-muted">curtosis</small> -->
+  </div>
+  <div class="col-auto">
+    <label for="exampleInputPassword1">entropy</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name='entropy' required>
+    <!-- <small id="emailHelp" class="form-text text-muted">entropy</small> -->
+  </div>
+</div>
+  <button type="submit" class="btn btn-primary">Predict</button>
+
+</form>
+<h3>variance : {{a}}</h3>
+<h3>skewness : {{b}}</h3>
+<h3>curtosis : {{c}}</h3>
+<h3>entropy : {{d}}</h3>
+<h2>{{data}}</h2>
+
+{% endblock %}
