@@ -10,9 +10,9 @@ classifier=pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
-    return "Welcome All"
+    return "<h1>Welcome All</h1>"
 
-@app.route('/predict',methods=["Get",'POST'])
+@app.route('/predict',methods=["GET",'POST'])
 def predict_note_authentication():
 	s,a,b,c,d='','','','',''
 	if(request.method=='POST'):
