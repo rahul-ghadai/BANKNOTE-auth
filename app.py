@@ -27,4 +27,4 @@ def predict_note_authentication():
 	return render_template("data.html",data=s,a=a,b=b,c=c,d=d)
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()
