@@ -10,7 +10,7 @@ classifier=pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
-    return "<h1>Welcome All</h1>"
+    return "<h1>Banknote authentication<a href='/predict'>go on<a/></h1>"
 
 @app.route('/predict',methods=["GET",'POST'])
 def predict_note_authentication():
